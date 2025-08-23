@@ -17,25 +17,29 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Semester GPA Calculator Pro - Calculate Your University GPA | Free Academic Tool",
+  title: "GPA Calculator - Free Semester & CGPA Calculator Tool",
   description:
-    "Professional semester GPA calculator for university students. Calculate your Grade Point Average with support for different grading systems (4.0, 4.3 scales). Free, accurate, and easy to use academic tool.",
+    "Free GPA calculator for students. Calculate semester GPA, cumulative CGPA, and convert to percentage. Supports 4.0, 4.3 scales. Accurate & easy to use.",
   keywords: [
+    "GPA calculator",
     "semester GPA calculator",
-    "university GPA",
-    "grade point average",
-    "college calculator",
-    "academic tools",
-    "4.0 scale",
-    "4.3 scale",
-    "student calculator",
-    "semester GPA",
-    "college grades",
-    "university grades",
+    "cumulative GPA calculator",
+    "CGPA calculator",
+    "GPA to percentage converter",
+    "college GPA calculator",
+    "university grade calculator",
+    "4.0 scale GPA",
+    "4.3 scale GPA",
+    "student grade tools",
+    "academic calculator",
+    "free GPA calculator",
+    "grade point average calculator",
+    "semester grade calculator",
+    "college grade tracker",
   ].join(", "),
-  authors: [{ name: "Semester GPA Calculator Pro Team" }],
-  creator: "Semester GPA Calculator Pro",
-  publisher: "Semester GPA Calculator Pro",
+  authors: [{ name: "GPA Calculator Team" }],
+  creator: "GPA Calculator",
+  publisher: "GPA Calculator",
   robots: {
     index: true,
     follow: true,
@@ -50,30 +54,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://semester-gpa-calculator-pro.vercel.app",
-    siteName: "Semester GPA Calculator Pro",
-    title: "Semester GPA Calculator Pro - Calculate Your University GPA",
+    url: "https://gpa-calculator.vercel.app",
+    siteName: "GPA Calculator",
+    title: "Free GPA Calculator - Calculate Semester & Cumulative GPA",
     description:
-      "Professional semester GPA calculator for university students with support for different grading systems. Calculate your Grade Point Average accurately and for free.",
+      "Calculate your GPA instantly with our free tool. Supports semester GPA, cumulative CGPA, and percentage conversion. Multiple grading scales supported.",
     images: [
       {
-        url: "/placeholder-fmp07.png",
+        url: "/semester-gpa-calculator.png",
         width: 1200,
         height: 630,
-        alt: "Semester GPA Calculator Pro - Professional Grade Point Average Calculator",
+        alt: "Free GPA Calculator - Calculate Semester and Cumulative GPA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Semester GPA Calculator Pro - Calculate Your University GPA",
+    title: "Free GPA Calculator - Calculate Semester & Cumulative GPA",
     description:
-      "Professional semester GPA calculator for university students with support for different grading systems.",
+      "Calculate your GPA instantly with our free tool. Supports multiple grading scales and percentage conversion.",
     images: ["/semester-gpa-calculator.png"],
-    creator: "@semestergpacalc",
   },
   alternates: {
-    canonical: "https://semester-gpa-calculator-pro.vercel.app",
+    canonical: "https://gpa-calculator.vercel.app",
   },
   category: "education",
   generator: "v0.app",
@@ -93,10 +96,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              name: "Semester GPA Calculator Pro",
+              name: "GPA Calculator",
               description:
-                "Professional semester GPA calculator for university students with support for different grading systems",
-              url: "https://semester-gpa-calculator-pro.vercel.app",
+                "Free GPA calculator for students to calculate semester GPA, cumulative CGPA, and convert to percentage with multiple grading scale support",
+              url: "https://gpa-calculator.vercel.app",
               applicationCategory: "EducationalApplication",
               operatingSystem: "Web Browser",
               offers: {
@@ -106,20 +109,22 @@ export default function RootLayout({
               },
               creator: {
                 "@type": "Organization",
-                name: "Semester GPA Calculator Pro Team",
+                name: "GPA Calculator Team",
               },
               featureList: [
-                "Multiple grading systems support",
-                "4.0 and 4.3 GPA scales",
-                "Real-time GPA calculation",
-                "Course management",
-                "Academic performance insights",
+                "Semester GPA calculation",
+                "Cumulative GPA (CGPA) calculation",
+                "GPA to percentage conversion",
+                "Multiple grading systems (4.0, 4.3, 5.0, 10.0 scales)",
+                "Real-time calculation",
+                "PDF report export",
+                "Free to use",
               ],
             }),
           }}
         />
-        <meta name="theme-color" content="#059669" />
-        <meta name="msapplication-TileColor" content="#059669" />
+        <meta name="theme-color" content="#f59e0b" />
+        <meta name="msapplication-TileColor" content="#f59e0b" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
