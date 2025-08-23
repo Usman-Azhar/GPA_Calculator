@@ -24,6 +24,7 @@ import {
 } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import dynamic from "next/dynamic"
+import { Footer } from "@/components/footer"
 
 const jsPDF = dynamic(() => import("jspdf").then((mod) => mod.default), { ssr: false })
 
@@ -771,7 +772,7 @@ export default function GPACalculator() {
           </Card>
         </section>
 
-        {/* ... existing FAQ and footer sections ... */}
+        {/* ... existing FAQ section ... */}
         <section className="mt-16">
           <Card className="shadow-lg card-interactive hover-lift">
             <CardHeader>
@@ -851,6 +852,7 @@ export default function GPACalculator() {
           </Card>
         </section>
 
+        {/* ... existing complete guide section ... */}
         <section className="mt-16">
           <Card className="shadow-lg card-interactive hover-lift">
             <CardHeader>
@@ -1002,102 +1004,7 @@ export default function GPACalculator() {
         </section>
       </main>
 
-      <footer className="bg-muted mt-16 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold text-xl mb-4">GPA Calculator</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                The most trusted free GPA calculator for students worldwide. Calculate semester GPA, cumulative CGPA,
-                and convert to percentage with support for all major grading systems.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Calculators</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                    Semester GPA Calculator
-                  </a>
-                </li>
-                <li>
-                  <a href="/cumulative-gpa" className="text-muted-foreground hover:text-primary transition-colors">
-                    Cumulative GPA Calculator
-                  </a>
-                </li>
-                <li>
-                  <a href="/percentage" className="text-muted-foreground hover:text-primary transition-colors">
-                    GPA to Percentage Converter
-                  </a>
-                </li>
-                <li>
-                  <a href="/grade-calculator" className="text-muted-foreground hover:text-primary transition-colors">
-                    Grade Calculator
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a
-                    href="/how-to-calculate-gpa"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    How to Calculate GPA
-                  </a>
-                </li>
-                <li>
-                  <a href="/grading-systems" className="text-muted-foreground hover:text-primary transition-colors">
-                    Grading Systems Guide
-                  </a>
-                </li>
-                <li>
-                  <a href="/academic-tips" className="text-muted-foreground hover:text-primary transition-colors">
-                    Academic Success Tips
-                  </a>
-                </li>
-                <li>
-                  <a href="/gpa-requirements" className="text-muted-foreground hover:text-primary transition-colors">
-                    University GPA Requirements
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/faq" className="text-muted-foreground hover:text-primary transition-colors">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-                    Terms of Service
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>
-              &copy; 2025 GPA Calculator. All rights reserved. | Helping students achieve academic success worldwide.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

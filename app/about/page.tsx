@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { GraduationCap, Target, Users, Award, BookOpen, Calculator } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "About Us - GPA Calculator Pro | Professional Academic Tools",
@@ -226,77 +227,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <footer className="bg-muted mt-16 py-8">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold text-lg mb-4">GPA Calculator Pro</h3>
-              <p className="text-muted-foreground text-sm">
-                Professional GPA calculator for university students worldwide. Calculate your Grade Point Average with
-                precision and ease.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Tools</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/" className="text-muted-foreground hover:text-primary">
-                    GPA Calculator
-                  </a>
-                </li>
-                <li>
-                  <a href="/semester-gpa" className="text-muted-foreground hover:text-primary">
-                    Semester GPA
-                  </a>
-                </li>
-                <li>
-                  <a href="/cumulative-gpa" className="text-muted-foreground hover:text-primary">
-                    Cumulative GPA
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/about" className="text-muted-foreground hover:text-primary">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-muted-foreground hover:text-primary">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="text-muted-foreground hover:text-primary">
-                    Blog
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/privacy" className="text-muted-foreground hover:text-primary">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="/terms" className="text-muted-foreground hover:text-primary">
-                    Terms of Service
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2025 GPA Calculator Pro. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
