@@ -80,6 +80,15 @@ export const metadata: Metadata = {
   },
   category: "education",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#f59e0b" }],
+  },
+  manifest: "/site.webmanifest",
 }
 
 export default function RootLayout({
@@ -98,7 +107,7 @@ export default function RootLayout({
               "@type": "WebApplication",
               name: "GPA Calculator",
               description:
-                "Free GPA calculator for students to calculate semester GPA, cumulative CGPA, and convert to percentage with multiple grading scale support",
+                "Free GPA calculator for students to calculate semester GPA, cumulative CGPA, and convert to percentage with multiple grading system support",
               url: "https://gpa-calculator.vercel.app",
               applicationCategory: "EducationalApplication",
               operatingSystem: "Web Browser",
@@ -125,8 +134,10 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#f59e0b" />
         <meta name="msapplication-TileColor" content="#f59e0b" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="2NOasTZlgL9VKaI0dtzicOEBZGFBtYKhZTTxgx5nQBU" />
       </head>
