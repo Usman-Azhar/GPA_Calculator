@@ -140,6 +140,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="2NOasTZlgL9VKaI0dtzicOEBZGFBtYKhZTTxgx5nQBU" />
+        <meta name="google-adsense-account" content="ca-pub-9869273633440984">
       </head>
       <body className="font-sans">
         {children}
