@@ -1,0 +1,3 @@
+# ads.txt file for Google AdSense
+# Publisher ID: ca-pub-9869273633440984
+google.com, pub-9869273633440984, DIRECT, f08c47fec0942fa0

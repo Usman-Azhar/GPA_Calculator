@@ -3,7 +3,7 @@ export function GET() {
 Allow: /
 
 # Sitemap
-Sitemap: https://universitycalc.vercel.app/sitemap.xml
+Sitemap: https://gpacalculatoronline.vercel.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
