@@ -1,0 +1,21 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Google AdSense
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow crawling of CSS and JS files for better indexing
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+
+# Disallow admin or sensitive areas (if any)
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://gpacalculatoronline.vercel.app/sitemap.xml
+</txt>
